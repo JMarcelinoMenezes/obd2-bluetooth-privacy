@@ -51,6 +51,31 @@
     margin: 12px auto 4px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   }
+  .photo-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 16px 0 6px;
+  }
+  .photo-frame {
+    text-align: center;
+  }
+  .photo-frame img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    display: block;
+  }
+  .photo-frame span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
   .step {
     background: var(--card);
     border: 1px solid var(--card-border);
@@ -181,6 +206,12 @@
     </svg>
   </div>
   <div class="note">A posição exata varia de acordo com a marca e modelo — se não achar de primeira, procure numa faixa de uns 30cm ao redor da coluna de direção, embaixo do painel.</div>
+  <div class="photo-row">
+    <div class="photo-frame">
+      <img src="images/porta-vazia.jpg" style="object-position: 50% 35%;" alt="Porta OBD-II vazia, embaixo do painel">
+      <span>Porta OBD-II (vazia)</span>
+    </div>
+  </div>
 </div>
 
 <div class="step">
@@ -190,6 +221,12 @@
   </div>
   <p>O conector só entra de um jeito (é "macho-fêmea" guiado), então não tem como errar o encaixe. Empurre com firmeza até sentir que encostou de vez.</p>
   <div class="note">Não precisa ligar o carro pra isso — o adaptador já acende sozinho, alimentado pela bateria do veículo.</div>
+  <div class="photo-row">
+    <div class="photo-frame">
+      <img src="images/adaptador-conectado.jpg" style="object-position: 55% 75%;" alt="Adaptador ELM327 conectado na porta OBD-II, luz acesa">
+      <span>Adaptador conectado</span>
+    </div>
+  </div>
 </div>
 
 <div class="step">
